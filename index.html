@@ -276,7 +276,6 @@
             border: 1px solid rgba(255,255,255,0.05);
         }
 
-        /* НОВЫЙ БЛОК: СЛИВ ПЛАТНЫХ РЕДУКСОВ И РОЗЫГРЫШИ */
         .giveaway-block {
             background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(168, 85, 247, 0.1));
             border-radius: 2rem;
@@ -325,6 +324,82 @@
         .giveaway-btn:hover {
             transform: scale(1.03);
             box-shadow: 0 0 20px #ec4899;
+        }
+
+        /* НОВЫЙ БЛОК: Ripper famq — интеграция (большой) */
+        .integration-block {
+            background: linear-gradient(115deg, rgba(0, 0, 0, 0.7), rgba(80, 40, 130, 0.4));
+            border-radius: 2.5rem;
+            padding: 3rem 2rem;
+            margin: 3rem 0;
+            text-align: center;
+            border: 2px solid rgba(168, 85, 247, 0.6);
+            backdrop-filter: blur(12px);
+            transition: 0.3s;
+        }
+        .integration-block:hover {
+            border-color: #ec4899;
+            box-shadow: 0 0 30px rgba(236, 72, 153, 0.4);
+            transform: scale(1.01);
+        }
+        .integration-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            font-family: 'Orbitron', monospace;
+            background: linear-gradient(145deg, #f0e6ff, #c084fc, #ec4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+        .integration-title i {
+            background: none;
+            -webkit-background-clip: unset;
+            background-clip: unset;
+            color: #c084fc;
+        }
+        .integration-sub {
+            font-size: 1.2rem;
+            color: #ccc9ff;
+            max-width: 800px;
+            margin: 0 auto 1.2rem;
+        }
+        .integration-features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        .integration-feature {
+            background: rgba(168, 85, 247, 0.15);
+            border-radius: 2rem;
+            padding: 0.8rem 1.5rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            backdrop-filter: blur(4px);
+        }
+        .integration-btn {
+            background: linear-gradient(95deg, #5865f2, #7c3aed);
+            padding: 1.1rem 2.8rem;
+            border-radius: 80px;
+            font-weight: 700;
+            font-size: 1.3rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: white;
+            transition: 0.2s;
+            margin-top: 1rem;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        .integration-btn:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 25px #5865f2;
+            background: linear-gradient(95deg, #4752c4, #6b21db);
         }
 
         .contact-buttons {
@@ -428,6 +503,9 @@
             .giveaway-title {
                 font-size: 1.5rem;
             }
+            .integration-title {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
@@ -442,7 +520,6 @@
         <div class="logo">OWNER X RIPPER FAMILY</div>
         <div class="tagline"> majestic • ultimate modding</div>
         
-        <!-- Логотипы проектов: GTA 5 RP и Majestic RP (добавлено) -->
         <div class="projects-logos">
             <div class="project-logo">
                 <i class="fab fa-gripfire" style="color:#ff5722;"></i>
@@ -459,7 +536,7 @@
             <span class="badge-item"><i class="fas fa-code-branch"></i> Redux | Gunpack</span>
         </div>
         <div style="font-size: 1rem; max-width: 700px; margin: 1rem auto; color:#b9c7e0;">
-            Эксклюзивные моды для погружения в криминальный мир Лос-Сантоса. Лучшая графика, реалистичное оружие и поддержка топовых RP проектов.
+            Эксклюзивные моды для погружения в криминальный мир GTA 5. Лучшая графика, реалистичное оружие и поддержка топовых RP проектов.
         </div>
     </div>
 
@@ -495,7 +572,7 @@
         </div>
     </div>
 
-    <!-- НОВЫЙ БЛОК: СЛИВ ПЛАТНЫХ РЕДУКСОВ И РОЗЫГРЫШИ (ссылка на t.me/owner00811) -->
+    <!-- Слив платных редуксов и розыгрыши -->
     <div class="giveaway-block">
         <div class="giveaway-title">
             <i class="fas fa-gift"></i> Слив платных редуксов и розыгрыши
@@ -511,6 +588,25 @@
         <div style="margin-top: 1rem; font-size: 0.8rem; color: #b9aaff;">
             👑 Официальный канал: t.me/owner00811
         </div>
+    </div>
+
+    <!-- НОВЫЙ БЛОК: Ripper famq — Полная интеграция (большой) -->
+    <div class="integration-block">
+        <div class="integration-title">
+            <i class="fab fa-discord"></i> Ripper famq | Discord 
+        </div>
+        <div class="integration-sub">Не просто команда, а настоящая семья, где каждого слышат и ценят. Мы объединяемся, чтобы решать задачи, поддерживать в трудную минуту и радоваться общим победам.
+            
+        </div>
+        <div class="integration-features">
+            <span class="integration-feature"><i class="fas fa-chalkboard-user"></i>Единство </span>
+            <span class="integration-feature"><i class="fas fa-gamepad"></i> Развитие </span>
+            <span class="integration-feature"><i class="fas fa-trophy"></i>Уют</span>
+        </div>
+        <a href="https://discord.gg/X2yt3VwzYB" target="_blank" class="integration-btn">
+            <i class="fab fa-discord fa-2x"></i> Присоединиться к Discord →
+        </a>
+        <p style="margin-top: 1.2rem; font-size: 0.85rem; opacity: 0.8;"></p>
     </div>
 
     <!-- Описание задачи / Для какого проекта и детали -->
@@ -643,7 +739,7 @@
     if(copyAllBtn) {
         copyAllBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            const contactsAll = `https://taplink.cc/avilonavilon `;
+            const contactsAll = ` https://taplink.cc/avilonavilon `;
             navigator.clipboard.writeText(contactsAll).then(() => {
                 copyAllBtn.innerHTML = '<i class="fas fa-check-circle"></i> Контакты скопированы!';
                 setTimeout(() => {
