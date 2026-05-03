@@ -734,18 +734,8 @@
         });
     }
 
-    // Кнопка копирования всех контактов
-    const copyAllBtn = document.getElementById('copyAllContactsBtn');
-    if(copyAllBtn) {
-        copyAllBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            const contactsAll = `t.me/owner00811.`;
-            navigator.clipboard.writeText(contactsAll).then(() => {
-                copyAllBtn.innerHTML = '<i class="fas fa-check-circle"></i> Контакты скопированы!';
-                setTimeout(() => {
-                    copyAllBtn.innerHTML = '<i class="fas fa-copy"></i> Скопировать все контакты';
-                }, 2500);
-            });
+    
+                
         });
     }
 
